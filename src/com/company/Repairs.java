@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Repairs extends Expenditure {
 
 
@@ -35,5 +37,61 @@ public class Repairs extends Expenditure {
     public Repairs(double purchases, double salaries, double adminAndDocumentation) {
         super(purchases, 2500, salaries, adminAndDocumentation);
     }
+
+    public String getVehicleId() {
+        return vehicleId;
+    }
+
+    public String getRepairDescription() {
+        return repairDescription;
+    }
+
+    public String getAutoPart() {
+        return autoPart;
+    }
+
+    public double getCostOfPart() {
+        return costOfPart;
+    }
+
+    public double getLastCostOfPart() {
+        return lastCostOfPart;
+    }
+
+    public String getPreviousRepairDate() {
+        return previousRepairDate;
+    }
+
+    @Override
+    public double getServiceCharge() {
+        return serviceCharge;
+    }
+
+    public int getCurrentRepairDate() {
+        return currentRepairDate;
+    }
+
+    public String setRepairs() {
+
+        Scanner sc = new Scanner(System.in);
+
+        //scanner for name input
+        System.out.println("Enter vehicle Id ");
+        String vehicleId = sc.nextLine();
+        String idRecord = vehicleId;
+
+        System.out.println("Enter Repair Description ");
+        String Description = sc.nextLine();
+
+        System.out.println("Enter Auto Part Information ");
+        String AutoPart = sc.nextLine();
+
+        System.out.println("Enter Auto Part Cost ");
+        double autoPartCost = sc.nextDouble();
+
+
+        return idRecord + " " + autoPartCost;
+    }
+
 
 }

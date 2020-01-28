@@ -8,15 +8,9 @@ public class Main {
 
          String employeeInfo = person.setEmployeeInfo();
 
-//        Currency currency = new Currency();
-//
-//        String applicableCurrency = currency.getCurrencyCode();
-
         System.out.println( employeeInfo + " earned a total of "  + person.calculatePay() + " for the billing cycle");
 
     }
-
-
 
     }
 

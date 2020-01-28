@@ -70,10 +70,7 @@ public class Employee {
         return fName + " " + lName;
     }
 
-    public double calculatePay(){
-
-
-
+    double calculatePay(){
 
         if(hoursWorked > 0) {
             if(hoursWorked >= 80 ){
@@ -88,7 +85,6 @@ public class Employee {
             }
 //
             return hourlyRate * hoursWorked;
-
 
         }
 
