@@ -83,18 +83,8 @@ public class Employee {
             else
                 System.out.println("Your total work hours for the cycle = " + hoursWorked + " you are below average, and should improve on your work hours");
             }
-//
+
             return hourlyRate * hoursWorked;
 
         }
-
-//        return hoursWorked();
-
-
-
-
-//    private double hoursWorked() {
-//        return 0;
-//    }
-
 }

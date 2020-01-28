@@ -3,8 +3,6 @@ package com.company;
 import java.util.Scanner;
 
 public class Repairs extends Expenditure {
-
-
     private String vehicleId;
     private String repairDescription;
     private String autoPart;
@@ -13,7 +11,6 @@ public class Repairs extends Expenditure {
     private String previousRepairDate;
     private double serviceCharge;
     private int currentRepairDate;
-
 
 
     public Repairs(double purchases, double serviceCharge, double salaries, double adminAndDocumentation,
@@ -29,8 +26,6 @@ public class Repairs extends Expenditure {
         this.serviceCharge = serviceCharge1;
         this.previousRepairDate = previousRepairDate;
         this.currentRepairDate = currentRepairDate;
-
-
     }
 
 
@@ -71,7 +66,7 @@ public class Repairs extends Expenditure {
         return currentRepairDate;
     }
 
-    public String setRepairs() {
+    public String getRepairs() {
 
         Scanner sc = new Scanner(System.in);
 
